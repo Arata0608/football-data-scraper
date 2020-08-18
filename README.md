@@ -1,2 +1,3 @@
 # football-data-scraper
-Scraping tool with Python, Selenium.
+
+##### `pip install selenium openpyxl`
