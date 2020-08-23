@@ -20,6 +20,10 @@ player_num = []
 
 # get team transfer data 2004-2020. (4, 20)
 for i in range(4, 20):
+    
+    # setting the target club
+    club_name = "fc-liverpool"
+    index = 31
 
     # setting the number of year.
     if i < 10:
@@ -34,7 +38,7 @@ for i in range(4, 20):
     driver.switch_to.window(new_window)
 
     # access to URL.
-    driver.get(f'https://www.transfermarkt.com/tottenham-hotspur/transfers/verein/148/plus/1?saison_id=20{year}&pos=&detailpos=&w_s=')
+    driver.get(f'https://www.transfermarkt.com/{club_name}/transfers/verein/{index}/plus/1?saison_id=20{year}&pos=&detailpos=&w_s=')
 
     # correct data from page.
     try:
